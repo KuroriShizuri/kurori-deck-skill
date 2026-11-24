@@ -1,9 +1,8 @@
 ---
-name: rajen-deck-skill
+name: kurori-deck-skill
 version: 1.0.0
 description: |
-  Build a business proposal deck backed by data analysis, the way the GCI World
-  2026 Final Assignment deck was built: draft in Indonesian first, run humanizer
+  Build a business proposal deck backed by data analysis, the way the worked example deck was built: draft in Indonesian first, run humanizer
   passes, verify numbers against the executed notebook, write one HTML file per
   slide, and render the PDF with a repeatable pipeline. 15 slides maximum;
   every number is cited on the slide where it appears.
@@ -11,11 +10,10 @@ license: MIT
 compatibility: claude-code codex muse opencode
 ---
 
-# Rajen Deck Skill
+# Kurori Deck Skill
 
 Build a short business proposal deck from a data analysis, with a source for
-every number. This skill records the method used for the GCI World 2026 Final
-Assignment (Company A telecom churn, November 2026): a 15-slide PDF deck in
+every number. This skill records the method used for the worked example deck (Company A telecom churn, November 2026): a 15-slide PDF deck in
 English, built from an Indonesian draft. Every number was checked against the
 executed analysis notebook and cited on the slide where it appears. The
 finished package was delivered to its author. The deck PDF itself is not
@@ -45,7 +43,7 @@ These rules are never broken. The original deck passed its build and number
 checks (Steps 8 and 9) because it followed them.
 
 1. **15 slides maximum, including the title slide and the references slide.**
-   Count every slide. In the GCI assignment the grader ignores slides past the
+   Count every slide. In the worked example assignment the grader ignores slides past the
    limit, so an extra slide counts as missing. Confirm the limit and its
    consequence for each new assignment (Step 1).
 2. **At least one ML or statistical model, with its name, its evaluation
@@ -65,7 +63,7 @@ checks (Steps 8 and 9) because it followed them.
    tutorial text. See `references/number-verification.md`.
 7. **AI chat history is never published.** If the assignment asks for AI use
    disclosure, cite the session URL only. Never attach or paste a transcript.
-   The GCI case cites the Kiro session URL, which is login-gated and does not
+   The worked example cites the Kiro session URL, which is login-gated and does not
    make the transcript public.
 8. **No em-dash and no en-dash in slide text, no emoji, no AI-style
    wording.** The checker rejects both dashes everywhere, so write number
@@ -88,7 +86,7 @@ checks (Steps 8 and 9) because it followed them.
 ### Step 1. Read the assignment rules from the official documents
 
 Read the assignment README and tutorial files directly from disk. Do not rely
-on a browser summary or a chat answer about the format. The GCI case showed
+on a browser summary or a chat answer about the format. The worked example showed
 why: an early browser report invented a 16:9 requirement, a white background,
 a group presentation, and a Google Classroom deadline. None of these were in
 the official documents. (The final deck still uses a 16:9 canvas and a white
@@ -102,7 +100,7 @@ the build starts.
 ### Step 2. Plan the deck before the analysis is finished, but do not fix slide titles yet
 
 Draft a 15-slide plan covering hook, problem, insight, solution, cost,
-conclusions, and references. The GCI plan, slide by slide, is in
+conclusions, and references. The worked example plan, slide by slide, is in
 `references/deck-rules.md`. If the new deck needs fewer slides, 15 is a
 ceiling, not a target. Give each slide one idea and each results slide one
 exhibit. Keep proposal titles as working hypotheses until the analysis
@@ -120,7 +118,7 @@ ones such as the 22.9-point gap.
 Compare models on the same train/test split and report accuracy, AUC,
 precision, and recall. Report the margin of error next to the scores when the
 split is large enough to compute it. Test feature engineering and report the
-result even when it does not help. In the GCI case it did not help
+result even when it does not help. In the worked example it did not help
 (cross-validated accuracy 0.6224 with the new features against 0.6239
 without), so the features were left out and the slide says so.
 
@@ -150,7 +148,7 @@ installed skill when it is available. The condensed rules are in
 `references/humanizer-rules.md`. The pass removes AI tells and translationese
 (kalke, i.e. calques) without changing any number, citation, or
 cross-reference. Run that skill's metric script if it is available, and fix
-what it flags. The GCI Indonesian draft measured: mean sentence length 14.4
+what it flags. The Indonesian draft in the worked example measured: mean sentence length 14.4
 words, standard deviation 8.8, 0 em/en dashes. The humanizer produces a draft
 for a human to edit, so edit the result by hand afterwards.
 
@@ -162,7 +160,7 @@ when it is available. Never apply the humanizer to titles, numbers, model
 names, citations, or formulas. Titles are full sentences that carry numbers,
 so rewrite a weak title by hand instead of running it through the humanizer.
 
-Two lessons from the GCI build, both caught by an independent review:
+Two lessons from the original build, both caught by an independent review:
 
 - Keep an epistemic hedge such as "to the best of our knowledge" when the
   sentence makes a novelty claim.
@@ -188,8 +186,8 @@ executed notebook. Run it. It checks three things:
 It must report zero problems.
 
 Then run the notebook-vs-deck check with `scripts/check_notebook_vs_deck.py`
-(adapt its paths and its `CHECKS` list to the new deck; the GCI version is the
-worked example). In the GCI build it reported 51 PASS and 9 FAIL. On review,
+(adapt its paths and its `CHECKS` list to the new deck; the original version is the
+worked example). In the original build it reported 51 PASS and 9 FAIL. On review,
 all 9 fell in categories judged harmless: notebook-only values, a derived
 arithmetic gap, and rank values shown as ranks by design. See
 `references/number-verification.md`.
@@ -209,7 +207,7 @@ Author one standalone HTML file per slide, plus `deck.css` and `deck.json`
 
 Then check the PDF:
 
-- Run `pdfinfo`. Expect 15 pages for the GCI deck (at most 15 in general) at
+- Run `pdfinfo`. Expect 15 pages for the worked example deck (at most 15 in general) at
   960 by 540 pt. This equals the 1280 by 720 px canvas at 96 px per inch.
 - Run `pdffonts`. Every font listed must be Source Sans 3 (Regular or Bold)
   and show `yes` in the `emb` column.
@@ -227,7 +225,7 @@ platform. The reference list on the last slide and the list pasted into the
 platform's References field must be the same list. If the assignment requires
 AI use disclosure, the list includes the AI session URL. Never attach the AI
 chat transcript. Rename `deck.pdf` to follow the platform's file-name rule. In
-the GCI case the files were `[AccountName].pdf` and `[AccountName].ipynb`,
+the worked example the files were `[AccountName].pdf` and `[AccountName].ipynb`,
 with account name Rajendriya.
 
 ## File layout of a deck project

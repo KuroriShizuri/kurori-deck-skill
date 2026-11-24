@@ -1,14 +1,13 @@
-# rajen-deck-skill
+# kurori-deck-skill
 
 Membangun deck proposal bisnis yang didukung analisis data, dengan cara
-yang dipakai pada Final Assignment GCI World 2026: draf bahasa Indonesia
+yang dipakai pada deck proposal bisnis aslinya: draf bahasa Indonesia
 dulu, lalu humanizer, angka diverifikasi ke notebook yang dieksekusi,
 satu file HTML per slide, dan render PDF dengan pipeline yang bisa
 diulang. Maksimal 15 slide; setiap angka membawa sitasi di slide tempat
 angka itu muncul.
 
-Asal: Final Assignment GCI World 2026 (churn telekomunikasi Company A),
-November 2026. Paket yang sudah jadi diserahkan ke penulisnya; file PDF
+Asal: deck proposal bisnis aslinya (churn telekomunikasi Company A), November 2026. Paket yang sudah jadi diserahkan ke penulisnya; file PDF
 deck itu tidak disertakan di sini. Yang disertakan adalah metodenya,
 aturannya, toolchain-nya, dan teks deck sebagai contoh kerja.
 
@@ -33,12 +32,12 @@ aturannya, toolchain-nya, dan teks deck sebagai contoh kerja.
 
 Skill ini netral terhadap host: isinya folder Markdown dan skrip, dan bisa
 dipakai di AI host apa pun yang memuat skill dari folder. Salin seluruh
-folder `rajen-deck-skill` ke direktori skill host yang dipakai, lalu arahkan
+folder `kurori-deck-skill` ke direktori skill host yang dipakai, lalu arahkan
 host ke folder itu dengan cara host tersebut memuat skill lokal.
 
-- Claude Code: salin ke `~/.claude/skills/rajen-deck-skill/`
+- Claude Code: salin ke `~/.claude/skills/kurori-deck-skill/`
 - Codex: salin ke direktori skill pada instalasi Codex
-- Muse: salin ke `~/workspace/custom-skills/rajen-deck-skill/`
+- Muse: salin ke `~/workspace/custom-skills/kurori-deck-skill/`
 - Host lain: salin ke direktori tempat host itu membaca skill lokal
 
 Tidak ada langkah build dan tidak ada instalasi tambahan untuk teks skill

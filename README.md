@@ -1,14 +1,12 @@
-# rajen-deck-skill
+# kurori-deck-skill
 
-Build a business proposal deck backed by data analysis, the way the GCI
-World 2026 Final Assignment deck was built: draft in Indonesian first,
+Build a business proposal deck backed by data analysis, the way the worked example deck was built: draft in Indonesian first,
 run humanizer passes, verify numbers against the executed notebook,
 write one HTML file per slide, and render the PDF with a repeatable
 pipeline. 15 slides maximum; every number is cited on the slide where it
 appears.
 
-Origin: GCI World 2026 Final Assignment (Company A telecom churn),
-November 2026. The finished package was delivered to its author; the deck
+Origin: the worked example deck (Company A telecom churn), November 2026. The finished package was delivered to its author; the deck
 PDF itself is not included here. What is included is the method, the
 rules, the toolchain, and the deck text as a worked example.
 
@@ -33,12 +31,12 @@ rules, the toolchain, and the deck text as a worked example.
 
 This skill is harness-neutral: it is a folder of Markdown and scripts, and
 it works in any AI host that loads skills from a folder. Copy the whole
-`rajen-deck-skill` folder into the skill directory of your host, then point
+`kurori-deck-skill` folder into the skill directory of your host, then point
 the host at it the way that host loads a local skill.
 
-- Claude Code: copy into `~/.claude/skills/rajen-deck-skill/`
+- Claude Code: copy into `~/.claude/skills/kurori-deck-skill/`
 - Codex: copy into the Codex skills directory for your install
-- Muse: copy into `~/workspace/custom-skills/rajen-deck-skill/`
+- Muse: copy into `~/workspace/custom-skills/kurori-deck-skill/`
 - Other hosts: copy into the directory where that host reads local skills
 
 No build step and no extra install are needed for the skill text itself.

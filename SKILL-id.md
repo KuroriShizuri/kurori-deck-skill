@@ -1,9 +1,9 @@
 ---
-name: rajen-deck-skill
+name: kurori-deck-skill
 version: 1.0.0
 description: |
   Membangun deck proposal bisnis yang didukung analisis data, dengan cara
-  yang dipakai pada Final Assignment GCI World 2026: draf bahasa Indonesia
+  yang dipakai pada deck proposal bisnis aslinya: draf bahasa Indonesia
   dulu, lalu humanizer, angka diverifikasi terhadap notebook yang dieksekusi,
   satu file HTML per slide, dan render PDF dengan pipeline yang bisa
   diulang. Maksimal 15 slide; setiap angka membawa sitasi di slide tempat
@@ -12,12 +12,10 @@ license: MIT
 compatibility: claude-code codex muse opencode
 ---
 
-# Rajen Deck Skill
+# Kurori Deck Skill
 
 Membangun deck proposal bisnis yang singkat dari analisis data, dengan
-sumber untuk setiap angka. Skill ini merekam cara kerja yang dipakai pada
-Final Assignment GCI World 2026 (churn telekomunikasi Company A, November
-2026): deck PDF 15 slide berbahasa Inggris, dibangun dari draf Indonesia.
+sumber untuk setiap angka. Skill ini merekam cara kerja yang dipakai pada deck proposal bisnis aslinya (churn telekomunikasi Company A, November 2026): deck PDF 15 slide berbahasa Inggris, dibangun dari draf Indonesia.
 Setiap angka dicek ke notebook analisis yang dieksekusi dan membawa sitasi
 di slide tempat angka itu muncul. Paket yang sudah jadi diserahkan ke
 penulisnya; file PDF deck itu sendiri tidak disertakan di sini. Yang
@@ -49,7 +47,7 @@ Aturan-aturan ini tidak boleh dilanggar. Deck aslinya lolos cek build dan
 cek angka (Langkah 8 dan 9) karena mengikuti aturan ini.
 
 1. **Maksimal 15 slide, termasuk slide judul dan slide referensi.**
-   Hitung semua slide. Pada tugas GCI, penilai mengabaikan slide yang
+   Hitung semua slide. Pada tugas contoh kerja, penilai mengabaikan slide yang
    melewati batas, jadi slide tambahan sama saja dengan tidak ada.
    Pastikan batas dan konsekuensinya untuk setiap tugas baru (Langkah 1).
 2. **Minimal satu model ML atau statistik, dengan nama, metrik evaluasi,
@@ -69,7 +67,7 @@ cek angka (Langkah 8 dan 9) karena mengikuti aturan ini.
    bukan teks tutorial. Lihat `references/number-verification.md`.
 7. **Transkrip chat AI tidak pernah dipublikasikan.** Kalau tugas meminta
    pengungkapan pemakaian AI, cantumkan URL sesinya saja. Jangan pernah
-   melampirkan atau menempel transkrip. Kasus GCI mencantumkan URL sesi
+   melampirkan atau menempel transkrip. Contoh kerja mencantumkan URL sesi
    Kiro, yang hanya bisa dibuka setelah login dan tidak membuat transkrip
    menjadi publik.
 8. **Tanpa em-dash dan tanpa en-dash di teks slide, tanpa emoji, tanpa
@@ -95,7 +93,7 @@ cek angka (Langkah 8 dan 9) karena mengikuti aturan ini.
 ### Langkah 1. Baca aturan tugas dari dokumen resminya
 
 Baca langsung README dan file tutorial tugasnya, dari disk. Jangan
-mengandalkan ringkasan browser atau jawaban chat soal format. Kasus GCI
+mengandalkan ringkasan browser atau jawaban chat soal format. Contoh kerja
 menunjukkan alasannya: laporan browser awal mengarang syarat 16:9, latar
 putih, presentasi kelompok, dan deadline Google Classroom. Semuanya tidak
 ada di dokumen resmi. (Deck final tetap memakai kanvas 16:9 dan latar
@@ -110,7 +108,7 @@ dimulai.
 ### Langkah 2. Rencanakan deck sebelum analisis selesai, tapi jangan kunci judul slide dulu
 
 Buat rencana 15 slide yang mencakup hook, problem, insight, solution,
-cost, conclusions, dan references. Rencana GCI, slide per slide, ada di
+cost, conclusions, dan references. Rencana contoh kerja, slide per slide, ada di
 `references/deck-rules.md`. Kalau deck yang baru butuh slide lebih
 sedikit, angka 15 adalah batas atas, bukan target. Beri tiap slide satu
 gagasan dan tiap slide hasil satu exhibit. Judul proposal tetap hipotesis
@@ -128,7 +126,7 @@ angka terverifikasi, termasuk angka turunan seperti selisih 22,9 poin.
 Bandingkan model pada split train/test yang sama dan laporkan akurasi,
 AUC, precision, dan recall. Cantumkan margin of error di samping skor
 jika split-nya cukup besar untuk dihitung. Uji feature engineering dan
-laporkan hasilnya walaupun tidak membantu. Pada kasus GCI feature
+laporkan hasilnya walaupun tidak membantu. Pada contoh kerja, feature
 engineering tidak membantu (akurasi cross-validasi 0,6224 dengan fitur
 baru melawan 0,6239 tanpa fitur baru), jadi fiturnya dibuang dan hal itu
 dinyatakan di slide.
@@ -160,7 +158,7 @@ yang sudah terpasang jika tersedia. Ringkasan aturannya ada di
 `references/humanizer-rules.md`. Pass ini membuang tanda-tanda AI dan
 bahasa terjemahan (kalke, yaitu calque) tanpa mengubah angka, sitasi,
 atau rujukan silang apa pun. Jalankan skrip metrik skill itu jika
-tersedia, dan perbaiki yang ditandai. Pengukuran draf Indonesia pada kasus GCI: rerata panjang kalimat
+tersedia, dan perbaiki yang ditandai. Pengukuran draf Indonesia pada contoh kerja: rerata panjang kalimat
 14,4 kata, simpangan baku 8,8, 0 em/en dash. Humanizer menghasilkan draf untuk disunting manusia, jadi sunting
 hasilnya dengan tangan setelahnya.
 
@@ -173,7 +171,7 @@ judul, angka, nama model, sitasi, atau rumus. Judul adalah kalimat
 lengkap yang membawa angka, jadi tulis ulang judul yang lemah dengan
 tangan, jangan jalankan lewat humanizer.
 
-Dua pelajaran dari build GCI, keduanya ditemukan lewat review independen:
+Dua pelajaran dari build aslinya, keduanya ditemukan lewat review independen:
 
 - Pertahankan hedge epistemik seperti "to the best of our knowledge"
   saat kalimat membuat klaim kebaruan.
@@ -202,7 +200,7 @@ Hasilnya harus nol masalah.
 
 Lalu jalankan pengecekan notebook lawan deck dengan
 `scripts/check_notebook_vs_deck.py` (sesuaikan path dan daftar `CHECKS`
-dengan deck yang baru; versi GCI adalah contoh kerja). Pada build GCI
+dengan deck yang baru; versi aslinya adalah contoh kerja). Pada build aslinya
 hasilnya 51 PASS dan 9 FAIL. Setelah ditinjau, kesembilan FAIL masuk
 kategori yang dinilai tidak bermasalah: nilai yang hanya ada di notebook,
 selisih aritmetika turunan, dan nilai rank yang memang ditampilkan
@@ -225,7 +223,7 @@ pipeline:
 
 Lalu cek PDF:
 
-- Jalankan `pdfinfo`. Untuk deck GCI: 15 halaman (maksimal 15 secara
+- Jalankan `pdfinfo`. Untuk deck contoh kerja: 15 halaman (maksimal 15 secara
   umum) pada 960 kali 540 pt. Ukuran ini sama dengan kanvas 1280 kali
   720 px pada 96 px per inci.
 - Jalankan `pdffonts`. Setiap font yang terdaftar harus Source Sans 3
@@ -244,7 +242,7 @@ Daftar referensi di slide terakhir dan daftar yang ditempel ke kolom
 References platform harus daftar yang sama. Kalau tugas meminta
 pengungkapan pemakaian AI, daftar itu memuat URL sesi AI. Jangan pernah
 melampirkan transkrip chat AI. Ganti nama `deck.pdf` mengikuti aturan
-nama file platform. Pada kasus GCI filenya adalah `[AccountName].pdf`
+nama file platform. Pada contoh kerja, filenya adalah `[AccountName].pdf`
 dan `[AccountName].ipynb`, dengan nama akun Rajendriya.
 
 ## Tata letak file proyek deck
