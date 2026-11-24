@@ -1,5 +1,5 @@
 ---
-name: gci-deck-skill
+name: rajen-deck-skill
 version: 1.0.0
 description: |
   Build a business proposal deck backed by data analysis, the way the GCI World
@@ -11,7 +11,7 @@ license: MIT
 compatibility: claude-code codex muse opencode
 ---
 
-# GCI Deck Skill
+# Rajen Deck Skill
 
 Build a short business proposal deck from a data analysis, with a source for
 every number. This skill records the method used for the GCI World 2026 Final

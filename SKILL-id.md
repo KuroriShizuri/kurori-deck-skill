@@ -1,5 +1,5 @@
 ---
-name: gci-deck-skill
+name: rajen-deck-skill
 version: 1.0.0
 description: |
   Membangun deck proposal bisnis yang didukung analisis data, dengan cara
@@ -12,7 +12,7 @@ license: MIT
 compatibility: claude-code codex muse opencode
 ---
 
-# GCI Deck Skill
+# Rajen Deck Skill
 
 Membangun deck proposal bisnis yang singkat dari analisis data, dengan
 sumber untuk setiap angka. Skill ini merekam cara kerja yang dipakai pada

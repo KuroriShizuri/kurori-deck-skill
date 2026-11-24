@@ -1,4 +1,4 @@
-# gci-deck-skill
+# rajen-deck-skill
 
 Build a business proposal deck backed by data analysis, the way the GCI
 World 2026 Final Assignment deck was built: draft in Indonesian first,
@@ -33,12 +33,12 @@ rules, the toolchain, and the deck text as a worked example.
 
 This skill is harness-neutral: it is a folder of Markdown and scripts, and
 it works in any AI host that loads skills from a folder. Copy the whole
-`gci-deck-skill` folder into the skill directory of your host, then point
+`rajen-deck-skill` folder into the skill directory of your host, then point
 the host at it the way that host loads a local skill.
 
-- Claude Code: copy into `~/.claude/skills/gci-deck-skill/`
+- Claude Code: copy into `~/.claude/skills/rajen-deck-skill/`
 - Codex: copy into the Codex skills directory for your install
-- Muse: copy into `~/workspace/custom-skills/gci-deck-skill/`
+- Muse: copy into `~/workspace/custom-skills/rajen-deck-skill/`
 - Other hosts: copy into the directory where that host reads local skills
 
 No build step and no extra install are needed for the skill text itself.
