@@ -31,6 +31,8 @@ prose.
 
 ## English pass: academic-humanizer (AIScientists-Dev, MIT, v0.3.3)
 
+Source: https://github.com/AIScientists-Dev/academic-humanizer
+
 From NSF CAREER and NIH R01 funded researchers. Six layers, audit first
 then rewrite. Apply to English academic prose and to deck prose. Never
 use it to evade AI-use disclosure.
@@ -126,6 +128,8 @@ claims softened or given evidence pointers, voice notes. Confirm that no
 number, equation, or citation was altered.
 
 ## Indonesian pass: humanizer-indonesia (v1.7.2)
+
+Source: https://github.com/adhiprib/humanizer-indonesia
 
 Edits Indonesian text so it reads as human writing, not model output or
 translation. Framework: draft, audit, then final revision. The skill
