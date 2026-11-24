@@ -52,7 +52,8 @@ bahasa yang lengkap:
 
 - `academic-humanizer` (Inggris): AIScientists-Dev/academic-humanizer,
   https://github.com/AIScientists-Dev/academic-humanizer, MIT, v0.3.3
-- `humanizer-indonesia` (Indonesia): skill humanizer-indonesia, v1.7.2
+- `humanizer-indonesia` (Indonesia): adhiprib/humanizer-indonesia,
+  https://github.com/adhiprib/humanizer-indonesia, MIT, v1.7.2
 
 ## Cara pakai
 

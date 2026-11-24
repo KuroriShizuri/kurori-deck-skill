@@ -284,8 +284,9 @@ untuk menghindari tampilan generik ada di `references/design-tokens.md`.
   dipertahankan, tidak pernah mengarang bukti. Sumber:
   https://github.com/AIScientists-Dev/academic-humanizer. Ringkasannya di
   `references/humanizer-rules.md`.
-- `humanizer-indonesia` (humanizer Indonesia; v1.7.2): draf, audit, lalu
-  revisi akhir. Membuang tanda AI dan bahasa terjemahan. Ringkasannya di
+- `humanizer-indonesia` (humanizer Indonesia; MIT; adhiprib; v1.7.2): draf,
+  audit, lalu revisi akhir. Membuang tanda AI dan bahasa terjemahan. Sumber:
+  https://github.com/adhiprib/humanizer-indonesia. Ringkasannya di
   `references/humanizer-rules.md`.
 - Panduan presentasi dari skill `documents` (satu file HTML per slide,
   ditambah `deck.css` dan `deck.json`, dirakit dengan cara yang sama setiap

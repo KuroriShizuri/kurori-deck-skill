@@ -265,8 +265,9 @@ avoiding generic-looking visuals are in `references/design-tokens.md`.
   six layers, audit then rewrite, preserves numbers and citations, never
   invents evidence. Source: https://github.com/AIScientists-Dev/academic-humanizer.
   Condensed in `references/humanizer-rules.md`.
-- `humanizer-indonesia` (Indonesian humanizer; v1.7.2): draft, audit, then
-  final revision. Removes AI tells and translationese. Condensed in
+- `humanizer-indonesia` (Indonesian humanizer; MIT; adhiprib; v1.7.2):
+  draft, audit, then final revision. Removes AI tells and translationese.
+  Source: https://github.com/adhiprib/humanizer-indonesia. Condensed in
   `references/humanizer-rules.md`.
 - The `documents` skill presentation guide (one HTML file per slide plus
   `deck.css` plus `deck.json`, assembled the same way on every run): the layout

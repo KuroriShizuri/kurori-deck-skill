@@ -50,8 +50,8 @@ language pipeline:
 
 - `academic-humanizer` (English): AIScientists-Dev/academic-humanizer,
   https://github.com/AIScientists-Dev/academic-humanizer, MIT, v0.3.3
-- `humanizer-indonesia` (Indonesian): the humanizer-indonesia skill,
-  v1.7.2
+- `humanizer-indonesia` (Indonesian): adhiprib/humanizer-indonesia,
+  https://github.com/adhiprib/humanizer-indonesia, MIT, v1.7.2
 
 ## Use
 
