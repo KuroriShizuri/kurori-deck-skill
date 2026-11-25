@@ -1,47 +1,47 @@
 # Roadmap
 
 Ideas for a future version of this skill. Nothing in this file is a rule
-of the skill. Nothing here has been adopted, tested, or reviewed against
-the GCI deck. Do not teach any of it as part of the skill until the user
-and the author brainstorm it and decide.
+of the skill.
 
-## Pitch-deck frameworks under consideration
+## Adopted in v2.0.0
 
-These frameworks were proposed by the user on 24 November 2026 as next
-improvement considerations. They are listed here so they are not lost,
-and so no one mistakes them for adopted rules.
+The pitch-deck frameworks listed here in v1 (H-P-S-I-T-C, SCR Framework,
+Pyramid Principle, One slide One message, BLUF method, Data Slide
+Formula, Storyboard approach, the "So what?" Test) are ADOPTED in v2 as
+the method router pool: 4 flows plus 5 supporting layers, ranked per
+brief. They moved out of this file and into `SKILL.md` ("Method
+router"). The adoption record is in `CHANGELOG.md` (v2.0.0). Before
+adoption, the three conditions from v1 were met: brainstorming with the
+user, a test on real decks (Company A router test, KopiRumah pitch test,
+MieLestari case test, each recorded slide by slide in the research
+workspace), and a version bump with this changelog entry. The old method
+is kept available: the v1 workflow lives on inside the v2 fifteen steps.
 
-- **H-P-S-I-T-C** (Hook, Problem, Solution, Impact, Traction,
-  Conclusion): a pitch structure that opens with a hook and closes with
-  traction. Untested against the GCI deck structure.
-- **SCR Framework** (Situation, Complication, Resolution): a
-  consulting-style story frame. Untested against the GCI deck.
-- **Pyramid Principle**: conclusion first, then supporting arguments in
-  a tree. Related to the title rule in this skill (titles are conclusion
-  sentences), but not adopted as a full method.
-- **One slide, one message**: one idea per slide. Already close to this
-  skill's practice, but not adopted as a named rule.
-- **BLUF method** (Bottom Line Up Front): put the conclusion at the
-  start of each slide. Related to the title rule, but not adopted.
-- **Data Slide Formula**: a template for turning a data finding into a
-  slide. Not evaluated.
-- **Storyboard approach**: sketch the deck as a sequence of frames
-  before writing. Not evaluated.
-- **The "So what?" Test**: ask "so what?" of every slide and cut the
-  ones with no answer. Related to the citation and title rules, but not
-  adopted as a formal gate.
-- **Other pitch-deck skills**: any other published pitch-deck skill or
+## Still open
+
+These are not rules. Do not teach any of them as part of the skill until
+they are tested and adopted in a new version.
+
+- **Editable-text PPTX path** (python-pptx or another route). PPTX
+  today is image-based only.
+- **Density switch for professional vs pitch.** Kept as a preset.
+- **Full automatic palette extraction** from a reference image.
+- **Free-asset source list.** Licenses verified October 2026;
+  researched again November 2026; must be re-verified before adoption.
+- **Processing fluency citation** (Reber et al. 2004). Paper NOT
+  verified; do not cite it.
+- **Other pitch-deck skills.** Any other published pitch-deck skill or
   framework the user brings in later. To be evaluated on its own merits.
 
 ## What adopting one would require
 
-Before any framework above becomes part of the skill, three things must
+Before any item above becomes part of the skill, three things must
 happen:
 
-1. Brainstorming with the user: which framework, and what problem in the
+1. Brainstorming with the user: which item, and what problem in the
    current skill does it solve?
-2. A test on a real deck: apply it to the GCI worked example and record
-   what changes, slide by slide, and what gets worse.
+2. A test on a real deck: apply it and record what changes, slide by
+   slide, and what gets worse.
 3. A version bump and a changelog entry, with the old method kept
    available.
 

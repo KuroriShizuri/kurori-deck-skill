@@ -22,7 +22,12 @@ rules, the toolchain, and the deck text as a worked example.
 | `references/toolchain.md` | Build pipeline, scripts, gates, PPTX limits |
 | `references/humanizer-rules.md` | Both humanizer skills, condensed, with cautions |
 | `references/worked-example.md` | The Company A churn deck, numbers and slide map |
-| `references/roadmap.md` | Pitch-deck frameworks under consideration, not adopted |
+| `references/case-competition-mode.md` | Case-Competition Mode spec and the MieLestari worked example |
+| `references/palette-library.md` | 51 named palettes with fit labels |
+| `references/palette-picker-2026-11-24.html` | Visual palette picker, all 51 palettes |
+| `references/alur-kerja-v2-flowchart-2026-11-24.html` | Workflow flowchart (HTML) |
+| `references/alur-kerja-v2-flowchart-2026-11-24.pdf` | Workflow flowchart (PDF) |
+| `CHANGELOG.md` | Version history, what changed, what is still open |
 | `examples/content-en.md` | Final English deck text (worked example) |
 | `examples/content-id.md` | Indonesian draft text (worked example) |
 | `scripts/` | Toolchain scripts, copied verbatim |
@@ -58,34 +63,41 @@ language pipeline:
 1. Read `SKILL.md` (or `SKILL-id.md`) first.
 2. Read the assignment README and tutorial files directly, and write the
    real rules down before drafting.
-3. Follow the ten workflow steps in order. Do not skip the number
-   verification step: the checker must report zero problems before the
-   deck is built.
+3. Follow the fifteen workflow steps in order: route the method, freeze
+   the brief at the step 7 gate, build from the Frozen Spec, and do not
+   skip the number verification step: the checker must report zero
+   problems before the deck is built.
 4. Adapt `scripts/check_numbers_final.py` to the new deck by replacing
    the verified-numbers sheet (`SHEET`) with the new verified numbers.
    Keep the style bans as they are.
 5. Use `examples/content-en.md` and `examples/content-id.md` as the shape
    of the deck text: one section per slide, Title, Composition, Exhibit,
    Content, Footnote.
+6. For a deck judged cold without a presenter, use Case-Competition Mode
+   (`references/case-competition-mode.md`).
 
 ## Hard rules, in short
 
-15 slides maximum including title and references. At least one model with
-name, metric, and score written explicitly in slide text. Direct quotation
-below 40% of the deck text, as a guide. Every number carries its source on
-the same slide. Market data only after its source is proven openable.
-Model scores must match the executed notebook. AI chat history is never
-published (session URL only). No em-dash, no en-dash in slide text, no
-emoji, no AI-style wording. Model names are exempt from the word ban.
-Numbers are never invented or copied from memory.
+Slide budget follows the assignment; 15 is the sweet spot, not a hard
+floor. At least one model with name, metric, and score written explicitly
+in slide text. Direct quotation below 40% of the deck text, as a guide.
+Every number carries its source on the same slide. Market data only after
+its source is proven openable. Model scores must match the executed
+notebook. AI chat history is never published (session URL only). No
+em-dash, no en-dash in slide text, no emoji, no AI-style wording. Model
+names are exempt from the word ban. Numbers are never invented or copied
+from memory.
 
 ## What this skill is not
 
-The pitch-deck frameworks listed in `references/roadmap.md`
-(H-P-S-I-T-C, SCR Framework, Pyramid Principle, One slide One message,
-BLUF method, Data Slide Formula, Storyboard approach, the "So what?"
-Test) are candidates for a future improvement. They are not adopted here
-and must not be taught as rules of this skill.
+The pitch-deck frameworks listed in v1 as candidates (H-P-S-I-T-C, SCR
+Framework, Pyramid Principle, One slide One message, BLUF method, Data
+Slide Formula, Storyboard approach, the "So what?" Test) are adopted in
+v2 as the router pool. What is still not part of this skill: an
+editable-text PPTX path (PPTX today is image-based only), a density
+switch for professional vs pitch, full automatic palette extraction, a
+free-asset source list (needs re-verification), and a processing-fluency
+citation (paper not verified). See `CHANGELOG.md`.
 
 ## License
 

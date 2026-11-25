@@ -5,6 +5,19 @@ The deck this skill was built from. All numbers below come from
 is in that file; this page summarizes the case and the numbers so a new
 deck can see what a finished example looks like.
 
+A second worked example exists for Case-Competition Mode: the MieLestari
+deck (v10 FINAL, 43 slides, Indonesian, scored 9 for win-worthiness).
+It lives in `references/case-competition-mode.md`, not here, so the two
+examples do not duplicate each other.
+
+The Company A deck went through 15 versions; v15 is the version the
+user chose (24 Nov 2026, 21:52 WIB). Proof files in the research
+workspace (`~/workspace/kurori-deck-research/`):
+`uji-router-company-a-deck-html-v15-2026-11-24.html` and
+`uji-router-company-a-deck-2026-11-24.pdf`. Kiro session:
+https://app.kiro.dev/session/5378750b-d2cd-4b77-9eff-6c53db162875
+(27.55 credits).
+
 ## The case
 
 Company A is a mobile operator with 99,999 customers in two source files

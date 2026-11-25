@@ -110,3 +110,28 @@ converts the HTML source into editable PPTX text.
 - The layout catalog used for slide archetypes (category 08, entries 335
   to 350) has only 16 entries, so some layouts repeat (338 three times,
   349 twice in the GCI deck). Reuse is fine when the archetype fits.
+
+## HTML and CSS build notes (from the test decks, design section 11)
+
+From design section 11 (`router-design-v2-2026-11-24.md`, research
+workspace). These traps cost real debugging time in the Company A and
+KopiRumah tests:
+
+- `<br>` does not break a line inside a flex row. Use
+  `flex-direction:column` for two-line labels.
+- `align-items:stretch` on a slide-height flex row stretches cards to
+  slide height even after a fixed height is removed. Use
+  `align-items:center` for content-sized cards.
+- `width` on a flex item does not hold without `flex-shrink:0`.
+- Linux fallback font (DejaVu) is wider than Segoe UI. Letter-width
+  estimates based on Segoe UI cannot be trusted; visual verification
+  is mandatory.
+- SVG marker default `markerUnits="strokeWidth"` enlarges arrows 3x.
+  Use `userSpaceOnUse` for exact sizing.
+- Print-zoom trap, learned in the KopiRumah pitch test and already
+  recorded in `SKILL.md` (Build): JS `fit()` sets
+  `.frame{zoom:var(--z)}`; in headless print the window is 800 px wide,
+  so zoom becomes 0.625 and slides render small in the PDF. Kill it in
+  print CSS: `.frame{zoom:1!important}` plus
+  `@page{size:1280px 720px}`. Always check slide SIZE in rendered PDF
+  pages, not only the page count.

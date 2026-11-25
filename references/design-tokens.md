@@ -5,6 +5,18 @@ The visual system of the GCI deck, as built. Tokens are taken from
 `client_midnight_jade`) and from the final review. Change the values for a
 new deck, keep the rules.
 
+## v2 note
+
+The tokens below are the v1 default system. In v2 the agent reasons
+about the palette per deck from `references/palette-library.md` (51 named
+palettes) and the user locks one in; the default tokens below are only
+the fallback when the user picks nothing and there is no reference. The
+19 empirical visual rules from the Company A and MieLestari tests live in
+`SKILL.md` ("Design rules") and `SKILL-id.md` ("Aturan desain"). A deck
+that locks a library palette uses that palette's tokens; the MieLestari
+deck uses navy `#0B2E6E` and `#12264A`, blue `#1F4E9C`, gold `#E8A33D`
+and `#F5B544`, with Poppins and Montserrat.
+
 ## Tokens
 
 | Token | Value | Use |
